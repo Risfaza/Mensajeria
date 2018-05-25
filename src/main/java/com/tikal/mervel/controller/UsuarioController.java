@@ -47,6 +47,12 @@ public class UsuarioController {
 	PerfilDAO perfilDAO; 
 	
 	
+	@RequestMapping(value={"/prueba"},method = RequestMethod.GET)
+	   
+	   public void prueba(HttpServletResponse response, HttpServletRequest request) throws IOException {
+		   response.getWriter().println("Prueba del mètodo Pusuario prueba");
+
+	    }
 	
 	
 																	///////////alta de usuarios
